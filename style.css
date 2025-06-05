@@ -1,1 +1,382 @@
-/* Add you CSS here */
+/* Basic CSS for your personal website */
+
+/* Set the main background and text color */
+body {
+  background-color: #1A1A1A; /* Rich black */
+  color: #F0F0F0; /* Off-white text */
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Navbar styles (TOP)
+   ========================= */
+
+/* Navbar container */
+.navbar {
+  background-color: #1727d1; /* Purple accent */
+  padding: 8px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Navbar list styles */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Always push links to the far right */
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: 40px; /* Space from right edge */
+}
+
+/* Navbar list items */
+.navbar li {
+  margin-left: 24px; /* Space between links */
+}
+
+/* Navbar link styles */
+.navbar a {
+  color: #F0F0F0; /* Off-white text */
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: #1784D1; /* Blue accent on hover */
+}
+
+/* =========================
+   Hero section styles
+   ========================= */
+
+.hero {
+  background: url('img/hero_3.jpg') center center no-repeat;
+  background-size: cover; /* Cover the entire section */
+  padding: 60px 0 60px 0;
+}
+
+/* Hero content: side by side */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+/* Portrait image wrapper for circle background */
+.hero-img-wrapper {
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Portrait image */
+.hero-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #1A1A1A; /* Thin white border */
+}
+
+/* Hero text area */
+.hero-text {
+  text-align: center; /* Center align the text and buttons */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+}
+
+/* Subtle text for intro and role */
+.subtle-text {
+  color: #F0F0F0;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+/* Main name */
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0 0 8px 0;
+  color: #F0F0F0;
+  /* Add a subtle drop shadow for emphasis */
+  text-shadow: 1px 2px 8px rgba(0,0,0,0.18);
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When you hover over the hero h1, change color to purple and add a glow */
+.hero-text h1:hover {
+  color: #1784D1; /* Purple accent */
+  text-shadow: 0 0 16px #1784D1, 1px 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Container for hero buttons */
+.hero-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+}
+
+/* Style for hero section buttons */
+.hero-buttons .button {
+  background: #1727d1;
+  border: 2px solid #1727d1;
+  border-radius: 10%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border 0.2s;
+  text-decoration: none;
+}
+
+.hero-buttons .button:hover {
+  background: #1784D1;
+  border-color: #1784D1;
+}
+
+/* Style for icons inside buttons */
+.button .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive: stack on small screens for hero */
+@media (max-width: 700px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+}
+
+/* =========================
+   Bio/About section styles
+   ========================= */
+
+/* About/Bio section styles */
+.bio {
+  background: #fff; /* White background */
+  color: #222;      /* Dark text */
+  padding: 60px 0 60px 0;
+  text-align: center;
+}
+
+/* About section subtitle (Get To Know More) */
+.bio .about-subtitle {
+  color: #888;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+/* About section heading */
+.bio h2 {
+  color: #1727D1;
+  font-size: 2.5em;
+  margin: 0 0 32px 0;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* About section main layout */
+.about-content {
+  display: flex; /* Put image and info side by side */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center the whole section */
+  gap: 48px; /* Space between image and info */
+  max-width: 1100px;
+  margin: 0 auto 32px auto;
+}
+
+/* Image wrapper: big, rounded, with shadow */
+.about-img-wrapper {
+  background: #f6f6f6;
+  border-radius: 32px;
+  padding: 0;
+  box-shadow: 0 2px 32px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+/* Big image inside wrapper */
+.about-img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+
+/* Info side: cards and paragraph stacked vertically */
+.about-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align everything */
+  justify-content: flex-start;
+  min-width: 340px;
+}
+
+/* Cards row: two cards side by side */
+.about-cards {
+  display: flex;
+  flex-direction: row; /* Cards in a row */
+  gap: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Individual card */
+.about-card {
+  background: #fff;
+  border: 2px solid #bbb;
+  border-radius: 18px;
+  padding: 28px 36px;
+  min-width: 260px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card icon style for SVG and emoji */
+.about-card .icon {
+  width: 32px;
+  height: 32px;
+  font-size: 2em; /* For emoji fallback */
+  margin-bottom: 12px;
+  display: block;
+  color: #822659; /* For emoji */
+}
+
+/* Card title */
+.about-card-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* Card subtitle */
+.about-card-subtitle {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 2px;
+}
+
+/* About paragraph */
+.bio p {
+  color: #222;
+  max-width: 700px;
+  margin: 0;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 1000px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .about-img-wrapper {
+    margin-bottom: 16px;
+    max-width: 100%;
+    min-width: 0;
+    padding: 16px;
+  }
+  .about-info {
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+  }
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-card {
+    min-width: 220px;
+    width: 100%;
+  }
+  .bio p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   Projects section styles
+   ========================= */
+
+.projects {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Individual project styles */
+.project {
+  background-color: #222;
+  color: #F0F0F0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border-left: 6px solid #822659;
+}
+
+/* Headings styles */
+h1, h2, h3 {
+  margin-top: 0;
+  color: #F0F0F0;
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+}
+
+/* Example button style using CTA color */
+.button, button, input[type="submit"] {
+  background-color: #3E5641; /* Forest green */
+  color: #F0F0F0;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover {
+  background-color: #004D61;
+}

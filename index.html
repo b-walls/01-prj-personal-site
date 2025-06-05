@@ -2,10 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>My Personal Portfolio</title>
+  <!-- Link to the CSS file -->
   <link rel="stylesheet" href="style.css">
+  <!-- Add Google Fonts for a cool font style -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <!-- Simple navigation links -->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <!-- Left: Portrait image in a circle -->
+      <div class="hero-img-wrapper">
+        <img src="img/portrait.jpg" alt="Portrait of Brendan Walls" class="hero-img">
+      </div>
+      <!-- Right: Text and buttons -->
+      <div class="hero-text">
+        <p class="subtle-text">Hello, I'm</p>
+        <h1><strong>Brendan Walls</strong></h1>
+        <p class="subtle-text">Full Stack Developer</p>
+        <!-- Buttons row -->
+        <div class="hero-buttons">
+          <a href="https://github.com/b-walls" class="button" target="_blank">
+            <img src="img/github-logo.svg" alt="GitHub" class="icon">
+          </a>
+          <a href="https://www.linkedin.com/in/brendan-walls/" class="button" target="_blank">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bio and Skills Section -->
+  <section class="bio" id="about">
+    <div class="about-subtitle">Get To Know More</div>
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-img-wrapper">
+        <img src="img/old_pc.jpg" alt="Your Name" class="about-img">
+      </div>
+      <div class="about-info">
+        <div class="about-cards">
+          <div class="about-card">
+            <img src="img/trophy.svg" alt="Trophy Icon" class="icon">
+            <div class="about-card-title">Experience</div>
+            <div class="about-card-subtitle">3+ years</div>
+            <div class="about-card-subtitle">Software Development</div>
+          </div>
+          <div class="about-card">
+            <img src="img/graduation-cap.svg" alt="Trophy Icon" class="icon">
+            <div class="about-card-title">Education</div>
+            <div class="about-card-subtitle">Bachelor of Science</div>
+            <div class="about-card-subtitle">Computer Science</div>
+            <div class="about-card-subtitle">Summer 2026</div>
+          </div>
+        </div>
+        <p>
+          I am a fullstack developer pursuing a Bachelor of Science in Computer Science, expected to graduate in Summer 2026. I have over 3 years of experience in software development, specializing in backend and machine learning development. My passion lies in creating meaningful tools and applications for users.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <!-- Example project -->
+      <div class="project">
+        <h3>Project 1: Simple Webpage</h3>
+        <p>This is a basic webpage I built using HTML and CSS.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
