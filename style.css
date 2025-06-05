@@ -321,18 +321,88 @@ body {
   .about-cards {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 70%;
   }
   .about-card {
     min-width: 220px;
-    width: 100%;
+    width: 60%;
   }
   .bio p {
     text-align: center;
     margin: 0 auto;
   }
 }
+/* =========================
+   Skills section styles
+   ========================= */
+/* Skills section styles */
+.skills-section {
+  background: #1727D1; /* Blue background */
+  color: #F0F0F0;      /* Off-white text */
+  padding: 48px 0 48px 0;
+  text-align: center;
+  margin-top: 0;
+}
 
+/* Subtle subtitle */
+.skills-subtitle {
+  color: #cfd8e3;
+  font-size: 1.1em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+/* Bold, large heading */
+.skills-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0 0 28px 0;
+  color: #F0F0F0;
+}
+
+/* Skills row: flex row for cards */
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Individual skill card */
+.skill-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #F0F0F0;
+  font-size: 1.1em;
+  min-width: 120px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Skill icon style */
+.skill-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+/* Responsive: stack skill cards vertically on small screens */
+@media (max-width: 700px) {
+  .skills-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-card {
+    width: 80%;
+    min-width: unset;
+    justify-content: center;
+  }
+}
 /* =========================
    Projects section styles
    ========================= */
