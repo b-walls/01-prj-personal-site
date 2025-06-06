@@ -10,7 +10,10 @@
 </head>
 <body>
   <nav class="navbar">
-    <ul>
+    <button class="hamburger" onclick="toggleMenu()">
+      &#9776; 
+    </button>
+    <ul id="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li> 
       <li><a href="#projects">Projects</a></li>
@@ -186,5 +189,12 @@
 <footer class="footer">
   <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:brendan.walls22@gmail.com">brendan.walls22@gmail.com</a></p>
 </footer>
+<script>
+  // This function shows or hides the menu
+  function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
+  }
+</script>
 </body>
 </html>
