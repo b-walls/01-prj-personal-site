@@ -1,71 +1,49 @@
-/* Basic CSS for your personal website */
-
-/* Set the main background and text color */
+/* ===== Basic Styles ===== */
 body {
-  background-color: #1A1A1A; /* Rich black */
-  color: #F0F0F0; /* Off-white text */
+  background-color: #1727d1;
+  color: #F0F0F0;
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* =========================
-   Navbar styles (TOP)
-   ========================= */
-
-/* Navbar container */
+/* ===== Navbar ===== */
 .navbar {
-  background-color: #1727d1; /* Purple accent */
+  background-color: #1727d1;
   padding: 8px 0;
-  position: relative;
   width: 100%;
 }
-
-/* Navbar list styles */
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end; /* Always push links to the far right */
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
   max-width: 1100px;
   margin-left: auto;
-  margin-right: 40px; /* Space from right edge */
+  margin-right: 40px;
 }
-
-/* Navbar list items */
 .navbar li {
-  margin-left: 24px; /* Space between links */
+  margin-left: 24px;
 }
-
-/* Navbar link styles */
 .navbar a {
-  color: #F0F0F0; /* Off-white text */
+  color: #F0F0F0;
   text-decoration: none;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1em;
   font-weight: bold;
   transition: color 0.2s;
 }
-
-/* Navbar link hover effect */
 .navbar a:hover {
-  color: #1784D1; /* Blue accent on hover */
+  color: #1784D1;
 }
 
-/* =========================
-   Hero section styles
-   ========================= */
-
+/* ===== Hero Section ===== */
 .hero {
   background: url('img/hero_3.jpg') center center no-repeat;
-  background-size: cover; /* Cover the entire section */
-  padding: 60px 0 60px 0;
+  background-size: cover;
+  padding: 60px 0;
+  border-bottom: 15px solid #1727D1;
 }
-
-/* Hero content: side by side */
 .hero-content {
   display: flex;
   align-items: center;
@@ -74,34 +52,25 @@ body {
   margin: 0 auto;
   gap: 48px;
 }
-
-/* Portrait image wrapper for circle background */
 .hero-img-wrapper {
   border-radius: 50%;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Portrait image */
 .hero-img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #1A1A1A; /* Thin white border */
+  border: 1px solid #1A1A1A;
 }
-
-/* Hero text area */
 .hero-text {
-  text-align: center; /* Center align the text and buttons */
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
+  align-items: center;
 }
-
-/* Subtle text for intro and role */
 .subtle-text {
   color: #F0F0F0;
   font-size: 1.1em;
@@ -109,31 +78,22 @@ body {
   margin-top: 0;
   opacity: 0.8;
 }
-
-/* Main name */
 .hero-text h1 {
   font-size: 3em;
   margin: 0 0 8px 0;
   color: #F0F0F0;
-  /* Add a subtle drop shadow for emphasis */
   text-shadow: 1px 2px 8px rgba(0,0,0,0.18);
-  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.4s, text-shadow 0.4s;
 }
-
-/* When you hover over the hero h1, change color to purple and add a glow */
 .hero-text h1:hover {
-  color: #1784D1; /* Purple accent */
+  color: #1784D1;
   text-shadow: 0 0 16px #1784D1, 1px 2px 8px rgba(0,0,0,0.18);
 }
-
-/* Container for hero buttons */
 .hero-buttons {
   margin-top: 12px;
   display: flex;
   gap: 16px;
 }
-
-/* Style for hero section buttons */
 .hero-buttons .button {
   background: #1727d1;
   border: 2px solid #1727d1;
@@ -146,20 +106,17 @@ body {
   transition: background 0.2s, border 0.2s;
   text-decoration: none;
 }
-
 .hero-buttons .button:hover {
   background: #1784D1;
   border-color: #1784D1;
 }
-
-/* Style for icons inside buttons */
 .button .icon {
   width: 24px;
   height: 24px;
 }
 
-/* Responsive: stack on small screens for hero */
-@media (max-width: 700px) {
+/* ===== Responsive Hero ===== */
+@media (max-width: 1000px) {
   .hero-content {
     flex-direction: column;
     gap: 24px;
@@ -170,50 +127,35 @@ body {
   }
 }
 
-/* =========================
-   Bio/About section styles
-   ========================= */
-
-/* About/Bio section styles */
+/* ===== Bio/About Section ===== */
 .bio {
-  background: #fff; /* White background */
-  color: #222;      /* Dark text */
-  padding: 60px 0 60px 0;
+  background: #fff;
+  color: #222;
+  padding: 60px 0;
   text-align: center;
 }
-
-/* About section subtitle (Get To Know More) */
 .bio .about-subtitle {
   color: #888;
   font-size: 1.1em;
   margin-bottom: 8px;
 }
-
-/* About section heading */
 .bio h2 {
   color: #1727D1;
   font-size: 2.5em;
   margin: 0 0 32px 0;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 100px;
 }
-
-/* About section main layout */
 .about-content {
-  display: flex; /* Put image and info side by side */
-  align-items: flex-start; /* Align items to the top */
-  justify-content: center; /* Center the whole section */
-  gap: 48px; /* Space between image and info */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
   max-width: 1100px;
-  margin: 0 auto 32px auto;
+  margin: 0 auto;
 }
-
-/* Image wrapper: big, rounded, with shadow */
 .about-img-wrapper {
   background: #f6f6f6;
   border-radius: 32px;
-  padding: 0;
   box-shadow: 0 2px 32px rgba(0,0,0,0.07);
   display: flex;
   align-items: center;
@@ -221,8 +163,6 @@ body {
   min-width: 400px;
   min-height: 400px;
 }
-
-/* Big image inside wrapper */
 .about-img {
   width: 450px;
   height: 450px;
@@ -230,28 +170,20 @@ body {
   border-radius: 24px;
   display: block;
 }
-
-/* Info side: cards and paragraph stacked vertically */
 .about-info {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left align everything */
-  justify-content: flex-start;
+  align-items: flex-start;
   min-width: 340px;
 }
-
-/* Cards row: two cards side by side */
 .about-cards {
   display: flex;
-  flex-direction: row; /* Cards in a row */
   gap: 24px;
   margin-bottom: 24px;
   width: 100%;
   justify-content: flex-start;
 }
-
-/* Individual card */
 .about-card {
   background: #fff;
   border: 2px solid #bbb;
@@ -264,33 +196,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-/* Card icon style for SVG and emoji */
 .about-card .icon {
   width: 32px;
   height: 32px;
-  font-size: 2em; /* For emoji fallback */
+  font-size: 2em;
   margin-bottom: 12px;
   display: block;
-  color: #822659; /* For emoji */
+  color: #822659;
 }
-
-/* Card title */
 .about-card-title {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 6px;
   color: #222;
 }
-
-/* Card subtitle */
 .about-card-subtitle {
   color: #555;
   font-size: 1em;
   margin-bottom: 2px;
 }
-
-/* About paragraph */
 .bio p {
   color: #222;
   max-width: 700px;
@@ -300,8 +224,8 @@ body {
   font-size: 1.1em;
 }
 
-/* Responsive: stack on small screens */
-@media (max-width: 1000px) {
+/* ===== Responsive Bio/About ===== */
+@media (max-width: 1220px) {
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -332,35 +256,26 @@ body {
     margin: 0 auto;
   }
 }
-/* =========================
-   Skills section styles
-   ========================= */
-/* Skills section styles */
-.skills-section {
-  background: #1727D1; /* Blue background */
-  color: #F0F0F0;      /* Off-white text */
-  padding: 48px 0 48px 0;
-  text-align: center;
-  margin-top: 0;
-}
 
-/* Subtle subtitle */
+/* ===== Skills Section ===== */
+.skills-section {
+  background: #1727D1;
+  color: #F0F0F0;
+  padding: 48px 40px;
+  text-align: center;
+}
 .skills-subtitle {
   color: #cfd8e3;
   font-size: 1.1em;
   opacity: 0.8;
   margin-bottom: 4px;
 }
-
-/* Bold, large heading */
 .skills-title {
   font-size: 2.5em;
   font-weight: bold;
   margin: 0 0 28px 0;
   color: #F0F0F0;
 }
-
-/* Skills row: flex row for cards */
 .skills-row {
   display: flex;
   flex-wrap: wrap;
@@ -368,8 +283,6 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-
-/* Individual skill card */
 .skill-card {
   background: rgba(255,255,255,0.08);
   border-radius: 10px;
@@ -379,19 +292,19 @@ body {
   gap: 10px;
   color: #F0F0F0;
   font-size: 1.1em;
-  min-width: 120px;
   margin-bottom: 10px;
   border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-
-/* Skill icon style */
 .skill-icon {
   width: 28px;
   height: 28px;
   display: inline-block;
 }
-
-/* Responsive: stack skill cards vertically on small screens */
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #1784D1;
+}
 @media (max-width: 700px) {
   .skills-row {
     flex-direction: column;
@@ -403,40 +316,205 @@ body {
     justify-content: center;
   }
 }
-/* =========================
-   Projects section styles
-   ========================= */
 
+/* ===== Experience Section ===== */
+.experience-section {
+  background: url('img/hero_3.jpg') center center no-repeat;
+  background-size: cover;
+  color: #F0F0F0;
+  padding: 40px 0;
+  text-align: center;
+}
+.experience-section h2 {
+  color: #F0F0F0;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.experience-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.experience-item {
+  background: #1727D1;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(23, 39, 209, 0.06);
+}
+.experience-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #F0F0F0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 1em;
+}
+.job-dates {
+  color: #bfc8d6;
+  font-size: 0.95em;
+  font-style: italic;
+}
+.experience-item ul {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+.job-title strong {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+.experience-item,
+.experience-item ul,
+.experience-item ul li,
+.experience-item .job-dates {
+  font-weight: normal;
+}
+.experience-item ul li {
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  font-size: 1em;
+  opacity: 0.85;
+}
+@media (max-width: 1000px) {
+  .experience-item ul li {
+    font-size: 0.85em;
+  }
+  .experience-list {
+    padding: 0 10px;
+  }
+  .experience-item {
+    padding: 20px;
+  }
+  .experience-section h2 {
+    font-size: 0.8em;
+  }
+  .experience-item h3 {
+    font-size: 0.8em;
+  }
+  .job-title strong {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .job-dates {
+    font-size: 0.95em;
+  }
+}
+
+/* ===== Projects Section ===== */
 .projects {
   max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-}
-
-/* Individual project styles */
-.project {
-  background-color: #222;
+  margin-top: 0px;
+  padding: 48px 0;
+  min-width: 100%;
+  background: #F0F0F0;
   color: #F0F0F0;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  border-left: 6px solid #822659;
+  text-align: center;
+}
+.projects h2 {
+  color: #1727D1;
+  font-size: 2em;
+  margin-bottom: 36px;
+  font-weight: bold;
 }
 
-/* Headings styles */
+/* Subtle subtitle for Projects section */
+.projects-subtitle {
+  color: #888;
+  font-size: 1.1em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.project-card {
+  background: #F0F0F0;
+  color: #F0F0F0;
+  border-radius: 14px;
+  box-shadow: 0 2px 24px rgba(23, 39, 209, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  max-width: 700px;
+  width: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #bbb;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 24px #1784D1;
+}
+.project-img {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 10px;
+  border: 2px solid #1784D1;
+  background: #eee;
+}
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-title {
+  margin: 0 0 8px 0;
+  color: #1727d1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.project-desc {
+  font-family: Arial, sans-serif;
+  margin: 0 0 16px 0;
+  color: #1A1A1A;
+  font-size: 1em;
+  text-align: left;
+  opacity: 0.95;
+}
+.project-card .button {
+  background-color: #1727d1;
+  color: #fff;
+  font-size: 1em;
+  padding: 8px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.project-card .button:hover {
+  background-color: #1784D1;
+}
+
+/* ===== General Headings & Lists ===== */
 h1, h2, h3 {
   margin-top: 0;
   color: #F0F0F0;
 }
-
-/* List styles */
 ul {
   padding-left: 20px;
 }
-
-/* Example button style using CTA color */
 .button, button, input[type="submit"] {
-  background-color: #3E5641; /* Forest green */
+  background-color: #3E5641;
   color: #F0F0F0;
   border: none;
   padding: 10px 24px;
@@ -447,6 +525,21 @@ ul {
   margin-top: 10px;
 }
 
-.button:hover, button:hover, input[type="submit"]:hover {
-  background-color: #004D61;
+/* ===== Footer Styles ===== */
+.footer {
+  background: #1727d1; 
+  color: #F0F0F0;    
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+  font-size: 1.1em;
+  border-top: 2px solid #1784D1;
+}
+.footer a {
+  color: #F0F0F0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: #1784D1;
 }

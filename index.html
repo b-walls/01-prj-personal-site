@@ -3,47 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>My Personal Portfolio</title>
-  <!-- Link to the CSS file -->
   <link rel="stylesheet" href="style.css">
-  <!-- Add Google Fonts for a cool font style -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar Section -->
   <nav class="navbar">
-    <!-- Simple navigation links -->
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li> 
       <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
-  <!-- Hero Section -->
   <header class="hero" id="home">
     <div class="hero-content">
-      <!-- Left: Portrait image in a circle -->
       <div class="hero-img-wrapper">
         <img src="img/portrait.jpg" alt="Portrait of Brendan Walls" class="hero-img">
       </div>
-      <!-- Right: Text and buttons -->
       <div class="hero-text">
         <p class="subtle-text">Hello, I'm</p>
         <h1><strong>Brendan Walls</strong></h1>
         <p class="subtle-text">Full Stack Developer</p>
-        <!-- Buttons row -->
         <div class="hero-buttons">
           <a href="https://github.com/b-walls" class="button" target="_blank">
-            <img src="img/github-logo.svg" alt="GitHub" class="icon">
+            <i class="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/brendan-walls/" class="button" target="_blank">
-            <img src="img/linkedin-logo.svg" alt="LinkedIn" class="icon">
+            <i class="fab fa-linkedin"></i>
           </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Bio and Skills Section -->
   <section class="bio" id="about">
     <div class="about-subtitle">Get To Know More</div>
     <h2>About Me</h2>
@@ -73,58 +66,125 @@
       </div>
     </div>
   </section>
+
   <section class="skills-section">
-    <!-- Subtle subtitle -->
     <div class="skills-subtitle">Explore My</div>
-    <!-- Bold, large heading -->
     <h2 class="skills-title">Skills</h2>
-    <!-- Skills row with cards -->
     <div class="skills-row">
-      <!-- Each skill card has an icon and a name -->
       <div class="skill-card">
-        <img src="img/python.svg" alt="Python" class="skill-icon">
+        <i class="fa-solid fa-database"></i>
+        <span>Data Stuctures</span>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-code-branch"></i>
+        <span>Algorithms</span>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-python"></i>
         <span>Python</span>
       </div>
       <div class="skill-card">
-        <img src="img/java.svg" alt="Java" class="skill-icon">
+        <i class="fa-brands fa-java"></i>
         <span>Java</span>
       </div>
       <div class="skill-card">
-        <img src="img/html.svg" alt="HTML" class="skill-icon">
+        <i class="fa-brands fa-html5"></i>
         <span>HTML</span>
       </div>
       <div class="skill-card">
-        <img src="img/css.svg" alt="CSS" class="skill-icon">
+        <i class="fa-brands fa-css3-alt"></i>
         <span>CSS</span>
       </div>
       <div class="skill-card">
-        <img src="img/pytorch.svg" alt="PyTorch" class="skill-icon">
-        <span>PyTorch</span>
+        <i class="fa-brands fa-node-js"></i>
+        <span>Node.js</span>
       </div>
       <div class="skill-card">
-        <img src="img/datascience.svg" alt="Data Science" class="skill-icon">
-        <span>Data Science</span>
+        <i class="fa-brands fa-react"></i>
+        <span>React</span>
       </div>
       <div class="skill-card">
-        <img src="img/dsa.svg" alt="Data Structures" class="skill-icon">
-        <span>Data Structures</span>
+        <img src="img/FastAPI.svg" alt="FastAPI Logo" class="icon" style="width:18px; height:18px;">
+        <span>FastAPI</span>
       </div>
       <div class="skill-card">
-        <img src="img/algorithms.svg" alt="Algorithms" class="skill-icon">
-        <span>Algorithms</span>
+        <i class="fa-solid fa-robot"></i>
+        <span>Machine Learning and Genrative AI</span>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Data Analysis and Visualization</span>
       </div>
     </div>
   </section>
-  <!-- Projects Section -->
+  <section class="experience-section" id="experience">
+    <h2>Experience</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <h3>Vairav Technology - Remote, VA</h3>
+        <div class="job-title">
+          <strong>Software Engineer Intern</strong>
+          <span class="job-dates">May 2025 - Today</span>
+        </div>
+        <ul>
+          <li>Automated log parsing using machine learning and retrieval-augmented generation (RAG).</li>
+        </ul>
+        <div class="job-title">
+          <strong>Machine Learning Engineer Intern</strong>
+          <span class="job-dates">June 2024 - December 2024</span>
+        </div>
+        <ul>
+          <li>Worked with MLOps and AI system deployment, including model versioning and monitoring.</li>
+          <li>Developed a machine learning model for anomaly detection, achieving 96% precision, accuracy, and recall. Protecting company computer systems.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>James Madison University - Harrisonburg, VA</h3>
+        <div class="job-title">
+          <strong>Research Assistant</strong>
+          <span class="job-dates">January 2025 - May 2025</span>
+        </div>
+        <ul>
+          <li>Worked with a professor and graduate student to study wild chimpanzee locomotion</li>
+          <li>Fine-tuned, DeepLabCut, a pose estimation computer vision model to track chimpanzee locomotion, enabling accurate movement analysis for the biology research team’s study.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="projects" id="projects">
-    <h2>My Projects</h2>
+    <div class="projects-subtitle">Check Out My</div>
+    <h2>Projects</h2>
     <div class="project-list">
-      <!-- Example project -->
-      <div class="project">
-        <h3>Project 1: Simple Webpage</h3>
-        <p>This is a basic webpage I built using HTML and CSS.</p>
+      <div class="project-card">
+        <img src="img/film-finder.png" alt="Screenshot of Project 1" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Film Finder</h3>
+          <p class="project-desc">
+            A web application powered by a machine learning model that predicts movie similarity based on user input, this app provides personalized movie recommendations. The app is designed to be user-friendly and visually appealing, making it easy for users to find movies they will love.
+          </p>
+            <a href="http://film-finder-1123.onrender.com/" class="button" target="_blank">
+            Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/duke-dog-ai.png" alt="Screenshot of Project 2" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Duke Dog AI</h3>
+          <p class="project-desc">
+            A RAG chatbot application that allows freshman students to ask questions about anything they need to get through their first year at James Madison University. 
+          </p>
+          <a href="https://github.com/b-walls/freshman-ai" class="button" target="_blank">
+            Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
+<footer class="footer">
+  <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:brendan.walls22@gmail.com">brendan.walls22@gmail.com</a></p>
+</footer>
 </body>
 </html>
