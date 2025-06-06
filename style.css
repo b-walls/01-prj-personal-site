@@ -22,7 +22,6 @@ body {
 .navbar {
   background-color: #1727d1;
   padding: 0.5rem 0;
-  padding-bottom: 0.5rem;
   width: 100%;
 }
 .navbar ul {
@@ -48,53 +47,6 @@ body {
 }
 .navbar a:hover {
   color: #1784D1;
-}
-
-/* Make the hamburger button look better and stay in the top right corner on small screens */
-.hamburger {
-  display: none;                /* Hide by default */
-  font-size: 2rem;              /* Make the icon bigger */
-  background: none;             /* No background */
-  border: none;                 /* No border */
-  color: #F0F0F0;               /* White color */
-  cursor: pointer;              /* Pointer cursor on hover */
-  padding: 0.1em 0.3em;         /* Add some padding for a bigger click area */
-  border-radius: 0.4em;         /* Rounded corners */
-  position: absolute;           /* Place absolutely in the navbar */
-  top: 0rem;                  /* Distance from the top of the navbar */
-  right: 1.2rem;                /* Distance from the right edge */
-  z-index: 1001; 
-}
-
-.hamburger:hover {
-  background: rgba(23, 132, 209, 0.15); /* Soft blue background on hover */
-}
-
-/* On small screens, show hamburger and adjust navbar */
-@media (max-width: 700px) {
-  .navbar {
-    position: relative;         /* Needed for absolute hamburger positioning */
-    min-height: 4rem;         /* Make sure navbar is tall enough */
-  }
-  .hamburger {
-    display: block;  
-    align-self: center; 
-  }
-  .navbar ul {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;         /* Push menu below the navbar/hamburger */
-  }
-  .navbar ul {
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    background: #1727d1;
-    width: 100%;
-    padding: 1em 0;
-    margin: 0;
-  }
-  .navbar ul.show {
-    display: flex; /* Show menu when .show is added */
-  }
 }
 
 /* ===== Hero Section ===== */
